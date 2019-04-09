@@ -1,13 +1,12 @@
 body {
   font-size: 100%;
-  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
 .nav_bar {
   width: 100%;
   height: 100px;
-  background-color: lightblue;
+  background-color: white;
   box-shadow: 10px 10px lightgray;
 }
 .nav_bar-logo {
@@ -41,17 +40,19 @@ body {
   border-radius: 50%;
   border-color: #fff;
 } */
-.nav_bar-icon .button {
+.nav_bar-icon .requestbutton {
   text-decoration: none;
   cursor: pointer;
+  margin-top: -21px;
   text-align: center;
   color: white;
-  padding-top: 16px;
-  padding-bottom: 5px;
+  margin-right: -20px;
+  padding: 10px;
   background-color: red;
+  display: block;
 }
-.button:hover {
-  transform: rotateX(180deg);
+.nav_bar-icon .requestbutton:hover {
+  transform: scaleY(1.5);
 }
 .nav_bar-list ul {
   position: absolute;
@@ -62,7 +63,7 @@ body {
 .nav_bar-list ul li {
   position: relative;
   list-style: none;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-inline-end: 40px;
   border-bottom: none;
   /* flex: 1 0 auto;      */
@@ -70,7 +71,7 @@ body {
 .nav_bar-list ul li a {
   letter-spacing: 2px;
   color: black;
-
+  padding-bottom: 20px;
   position: relative;
   list-style: none;
   margin-top: 20px;
@@ -81,12 +82,11 @@ body {
   content: "";
   position: absolute;
   bottom: 0;
-
   right: 0;
   width: 0%;
   height: 4px;
   background: red;
-  /* transition: 0.2s width ease-in-out; */
+  transition: 0.2s;
 }
 .nav_bar-list ul li a::before {
   left: 0;
@@ -94,4 +94,73 @@ body {
 .nav_bar-list ul li a:hover::after,
 .nav_bar-list ul li a:hover::before {
   width: 50%;
+}
+.container {
+  margin-left: -90px;
+}
+.slogan {
+  margin-left: 180px;
+}
+.slogan p {
+  letter-spacing: 2px;
+  font-weight: 100rem;
+  font-size: 20px;
+  font-size: bold;
+}
+.highlight {
+  color: red;
+}
+.service {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  width: 300px;
+  letter-spacing: 2px;
+  margin-top: 30px;
+  padding: 0 20px 20px;
+  margin-left: 50px;
+}
+.img-icon {
+  display: block;
+  background: url("../img/icon_bg.png") left top 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.read_more {
+  margin-top: 30px;
+}
+.button {
+  margin-top: 80rem;
+  border: 1px solid black;
+  padding: 12px 22px;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 2px;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: red;
+  border-color: red;
+  color: white;
+}
+.heading {
+  text-align: center;
+  margin: 0 auto 60px;
+}
+.title {
+  text-transform: capitalize;
+  font-style: normal;
+  letter-spacing: 3px;
+  font-size: 48px;
+  line-height: 60px;
+}
+.pitch {
+  margin-left: 15rem;
+  max-width: 70%;
 }
