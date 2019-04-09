@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <img src="img/website-logo.png" alt="" class="logo" />
+      <input type="checkbox" id="chk" />
+      <label for="chk" class="show-menu-btn">
+        <i class="fas fa-ellipsis-h"></i>
+      </label>
+      <ul class="social-icons">
+        <li>
+          <a href=""><i class="fa fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fa fa-google-plus"></i></a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li>
+          <a class="active" href="#">Corporate</a>
+          <ul class="dropdown">
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Team</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Services</a>
+        </li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Clients</a></li>
+        <label for="chk" class="hide-menu-btn">
+          <i class="fas fa-times"></i>
+        </label>
+      </ul>
+    </div>
+    <div class="slider-holder">
+      <img src="img/Mobile-Solutions.jpg" class="slider-image" />
+      <img src="img/Outsourcing.jpg" class="slider-image" />
+      <img src="img/Outsourcing.jpg" class="slider-image" />
+    </div>
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("slider-image");
+        console.log(x.length);
+        for (i = 0; i < x.length; i++) {
+          console.log("hello");
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+    <!-- <br /><br /><br />
+    <div class="slider-holder">
+      <span id="slider-image-1"></span>
+      <span id="slider-image-2"></span>
+      <span id="slider-image-3"></span>
+      <div class="image-holder">
+        <img src="logo.jpg" class="slider-image" />
+        <img src="logo.jpg" class="slider-image" />
+        <img src="logo.jpg" class="slider-image" />
+      </div>
+      <div class="button-holder">
+        <a href="#slider-image-1" class="slider-change"></a>
+        <a href="#slider-image-2" class="slider-change"></a>
+        <a href="#slider-image-3" class="slider-change"></a>
+      </div>
+    </div> -->
+    <div class="content">
+      <div class="slogan">
+        <h2>THE</h2>
+        <br />
+        <h2 class="highlight">HIGH IMPACT MOBILITY SOLUTIONS,</h2>
+        <br />
+        <p>IT CONSULTING, OUTSOURCING MANAGEMENT & SOFTWARE DEVELOPMENT.</p>
+      </div>
+      <br />
+      <div class="segment-content">
+        <div class="heading">
+          <h2 class="title">Services</h2>
+          <div class="pitch">
+            Craterzone is a global leader in IT Staff augmentation, Offshore
+            software development, outsourcing management , software development
+            company in Delhi - Noida.
+          </div>
+        </div>
+        <div class="service">
+          <div class="ser_content">
+            <div class="img-icon">
+              <img src="img/mobile2.svg" />
+            </div>
+
+            <h4 class="service__heading">Mobility Solutions</h4>
+            <div class="service_content">
+              We at craterzone articulate your dreams into reality through the
+              expertise of our exceptional task force. As the adepts of mobile
+              technology, we try to convert the human innovative thoughts into
+              their desired mobile application…
+            </div>
+            <div
+              class="read_more"
+              style="float: right;text-align: right;margin-right: 10px"
+            >
+              <a class="button" href="">Read More</a>
+            </div>
+          </div>
+          <div class="ser_content">
+            <div class="img-icon">
+              <img src="img/mobile2.svg" />
+            </div>
+            <h4 class="service__heading">Offshore Outsourcing</h4>
+            <div class="service_content">
+              We at craterzone provide our clients with the most efficient
+              personnel who are equipped with the sound technical knowledge,
+              through our outsourcing management and IT consultation we provide
+              our clientele with an cutting edge…
+            </div>
+            <div
+              class="read_more"
+              style="float: right;text-align: right;margin-right: 10px"
+            >
+              <a class="button" href="">Read More</a>
+            </div>
+          </div>
+          <div class="ser_content">
+            <div class="img-icon">
+              <img src="img/mobile2.svg" />
+            </div>
+            <h4 class="service__heading">Software Development</h4>
+            <div class="service_content">
+              We believe in you wish, we create approach. At craterzone we have
+              the personnel with utmost quality of software developers who can
+              create what you desire or can rejuvenate any software product
+              which has lost its relevance…
+            </div>
+            <div
+              class="read_more"
+              style="float: right;text-align: right;margin-right: 10px"
+            >
+              <a class="button" href="">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="service">
+          <div class="ser_content">
+            <div class="img-icon">
+              <img src="img/mobile2.svg" />
+            </div>
+            <h4 class="service__heading">Cloud Computing</h4>
+            <div class="service_content">
+              We at craterzone articulate your dreams into reality through the
+              expertise of our exceptional task force. As the adepts of mobile
+              technology, we try to convert the human innovative thoughts into
+              their desired mobile application…
+            </div>
+            <div
+              class="read_more"
+              style="float: right;text-align: right;margin-right: 10px"
+            >
+              <a class="button" href="">Read More</a>
+            </div>
+          </div>
+          <div class="ser_content">
+            <div class="img-icon">
+              <img src="img/mobile2.svg" />
+            </div>
+            <h4 class="service__heading">Testing Services</h4>
+            <div class="service_content">
+              We at craterzone provide our clients with the most efficient
+              personnel who are equipped with the sound technical knowledge,
+              through our outsourcing management and IT consultation we provide
+              our clientele with an cutting edge…
+            </div>
+            <div
+              class="read_more"
+              style="float: right;text-align: right;margin-right: 10px"
+            >
+              <a class="button" href="">Read More</a>
+            </div>
+          </div>
+          <div class="ser_content">
+            <div class="img-icon">
+              <img src="img/mobile2.svg" />
+            </div>
+            <h4 class="service__heading">Design Services</h4>
+            <div class="service_content">
+              We believe in you wish, we create approach. At craterzone we have
+              the personnel with utmost quality of software developers who can
+              create what you desire or can rejuvenate any software product
+              which has lost its relevance…
+            </div>
+            <div
+              class="read_more"
+              style="float: right;text-align: right;margin-right: 10px"
+            >
+              <a class="button" href="">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feedback">
+        <h2>What Our Customers Say...</h2>
+      </div>
+    </div>
+  </body>
+</html>
