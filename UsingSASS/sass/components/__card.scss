@@ -1,0 +1,54 @@
+.card__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.card {
+  padding: 0 15px 0 15px;
+  width: 29%;
+  margin-bottom: 40px;
+  &__para {
+    height: 146px;
+    color: #515151;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 5px;
+  }
+  h4 {
+    width: 100%;
+    margin: 10px;
+    flex-wrap: wrap;
+    font-size: 19px;
+    flex-wrap: wrap;
+    font-family: lato;
+  }
+  flex-wrap: wrap;
+  background: linear-gradient(white 10%, #f2f3f2 20%, white 60%);
+}
+.read_button {
+  float: right;
+  margin-right: 10px;
+  border: 1px solid black;
+  padding: 10px 22px;
+  cursor: pointer;
+  text-align: center;
+  color: black;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 4px;
+  &:hover {
+    background-color: red;
+    border-color: red;
+    color: white;
+  }
+}
+@media screen and (max-width: 700px) {
+  .card {
+    padding: 0px;
+    margin: 0 -5rem 0 -5rem;
+    width: 200%;
+    margin-bottom: 40px;
+  }
+}

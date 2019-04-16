@@ -1,0 +1,68 @@
+.slogan {
+  font-weight: 400;
+  font-family: Lato, Arial, Helvetica, Verdana, sans-serif;
+  color: #292929;
+  h4 {
+    letter-spacing: 26px;
+    font-size: 26px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  h3 {
+    color: red;
+    letter-spacing: 3px;
+    padding: 6px 0 6px 0;
+  }
+  p {
+    letter-spacing: 3px;
+  }
+}
+.segment {
+  &__heading2 {
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 48px;
+    margin: 40px 0 15px;
+  }
+  &__para {
+    width: 70%;
+    margin: 10px auto 0;
+    text-align: center;
+    color: #515151;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .slogan {
+    h3 {
+      text-align: center;
+      width: 150%;
+      margin-left: -5rem;
+      letter-spacing: 3px;
+      //   padding: 6px 0 6px 0;
+    }
+    h4 {
+      text-align: center;
+    }
+    p {
+      letter-spacing: 3px;
+      margin-left: -7rem;
+
+      text-align: center;
+      width: 150%;
+    }
+  }
+  .segment {
+    &__heading2 {
+      text-align: center;
+      letter-spacing: 3px;
+      // font-size: 38px;
+      margin: 40px 0 15px -10px;
+    }
+    &__para {
+      width: 170%;
+      margin-left: -7.5rem;
+      color: #515151;
+    }
+  }
+}
